@@ -101,6 +101,11 @@ library(GGally)     # tested in version 1.4.0
 ## SECTION 1. Tumour Volume modelling
 ## =========================================================================================================================
 ## Load Novartis PDX trial Tumour Volume (TV) data
+# To run the R script, you would need to obtain the Novartis mouse clinical trial data from
+# https://www.nature.com/articles/nm.3954#supplementary-information
+# Excel files 
+# Supplementary Table 1 
+# Genomic profiling of PDXs and raw response and curve metrics of PCTs.
 setwd('/appropriate directory to find the following file/')
 dat = read_excel("Genomic profiling of PDXs and raw response and curve metrics of PCTs.xlsx",sheet="PCT raw data")
 colnames(dat) = c("MODEL","TYPE","TREATMENT","TV","BW","TIME","DEL.TV","DEL.BW")
