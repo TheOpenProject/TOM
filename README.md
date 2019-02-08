@@ -1,6 +1,11 @@
 # TOM
 Translational Oncology Modelling
-To run the R script "TOP TOM 2019-02-07", you would need to obtain the Novartis mouse clinical trial data from
+
+The R script "TOP TOM 2019-02-07.R" focuses on the following two questions:
+Goal 1. Which rate laws accurately recapitulate PDX tumour growth?
+Goal 2. Which rate laws accurately predict PDX tumour growth?
+
+To run the R script, you would need to obtain the Novartis mouse clinical trial data from
 
 https://www.nature.com/articles/nm.3954#supplementary-information
 
