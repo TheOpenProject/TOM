@@ -1,18 +1,18 @@
 ## =======================================================================
 ## PREAMBLE
 ## THE OPEN PROJECT (TOP)
-## Vision
+## VISION
 ## Affordable and effective novel therapies discovered and developed based
 ## on all accessible, relevant data in a timely manner
 ## 
 ## 
-## Mission
+## MISSION
 ## Pioneer in translational modelling to develop, validate and improve 
 ## quantitative methods and tools for accurate experimental design to 
 ## enable robust decision making in drug discovery and development
 ## 
 ## 
-## Participants
+## PARTICIPANTS
 ## Open: Any one can join for free to share data, models, codes and ideas
 ## Transparent: All results are properly documented to help the community
 ## Meritocracy: Participants are required to demonstrate understanding of
@@ -32,6 +32,19 @@
 ## Goal 3. Can in vivo gene expression predict in vivo tumour growth?
 ## 
 ## 
+## COMPLIMENTARY PRESENTATION SLIDES
+## The presentation slides are downloadable from Beyond's website
+## https://www.letsgobeyond.co.uk/workshops
+## 
+## 16. Using translational modelling to evaluate preclinical tumour models. 
+## Tumour models (Hanson Wade), DoubleTree by Hilton Hotel London - Docklands 
+## Riverside, London (12/2018) 
+## Part 1
+## https://docs.wixstatic.com/ugd/70e471_474d28217cb44479a79a98756c8b303f.pdf
+## Part 2
+## https://docs.wixstatic.com/ugd/70e471_750e0de2f1a64b7bb3b2d0e34a614213.pdf
+## 
+## 
 ## THE OPEN PROJECT - TRANSLATIONAL ONCOLOGY MODELLING WIKI
 ## A wiki page exists on GitHub to answer some of the questions:
 ## https://github.com/TheOpenProject/TOM/wiki
@@ -45,6 +58,7 @@
 ## The spirit of TOP
 ## 
 ## 
+## LICENCE
 ## TheOpenProject/TOM is licensed under the
 ## GNU General Public License v3.0
 ## 
@@ -55,9 +69,9 @@
 ## under the same license. Copyright and license notices must be 
 ## preserved. Contributors provide an express grant of patent rights.
 ## 
-## Copyright © 2019 by Beyond Consulting Ltd.
+## COPYRIGHT © 2019 by Beyond Consulting Ltd.
 ## 
-## Disclaimer
+## DISCLAIMER
 ## The content of this presentation may be subject to alterations and 
 ## updates. Therefore, information expressed in this presentation may not 
 ## reflect the most up-to-date information, unless otherwise notified by 
@@ -70,10 +84,12 @@
 ## Englandand Wales. Registered Office: 14 Tytherington Park Road, 
 ## Macclesfield, Cheshire, SK10 2EL. United Kingdom
 ## 
-## Contact Information: 
+## 
+## CONTACT INFORMATION 
 ## Please contact Tao You: Email: tao.you@letsgobeyond.co.uk 
 ## or visit www.letsgobeyond.co.uk.
 ## Created in RStudio Version 1.1.453 – © 2009-2019 RStudio, Inc. 
+## 
 ## 
 ## Beyond Consulting Ltd is a trusted advisor on translational oncology 
 ## PK/PD modelling. We help drug discovery and development projects to 
@@ -106,7 +122,8 @@ library(GGally)     # tested in version 1.4.0
 # Excel files 
 # Supplementary Table 1 
 # Genomic profiling of PDXs and raw response and curve metrics of PCTs.
-setwd('/appropriate directory to find the following file/')
+# setwd('/appropriate directory to find the following file/')
+setwd('/Volumes/Macintosh HD/Users/tangtang/Documents/Beyond/Consulting/Novartis Mouse Clinical Trial/')
 dat = read_excel("Genomic profiling of PDXs and raw response and curve metrics of PCTs.xlsx",sheet="PCT raw data")
 colnames(dat) = c("MODEL","TYPE","TREATMENT","TV","BW","TIME","DEL.TV","DEL.BW")
 dat.ctrl = dat[which(dat$TREATMENT=='BKM120'),]
