@@ -123,7 +123,7 @@ library(GGally)     # tested in version 1.4.0
 # Supplementary Table 1 
 # Genomic profiling of PDXs and raw response and curve metrics of PCTs.
 # setwd('/appropriate directory to find the following file/')
-setwd('/Volumes/Macintosh HD/Users/tangtang/Documents/Beyond/Consulting/Novartis Mouse Clinical Trial/')
+setwd('~/Documents/Beyond/Consulting/Novartis Mouse Clinical Trial/')
 dat = read_excel("Genomic profiling of PDXs and raw response and curve metrics of PCTs.xlsx",sheet="PCT raw data")
 colnames(dat) = c("MODEL","TYPE","TREATMENT","TV","BW","TIME","DEL.TV","DEL.BW")
 dat.ctrl = dat[which(dat$TREATMENT=='BKM120'),]
